@@ -10,11 +10,12 @@
 
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/about.css">
+    <link rel="stylesheet" href="assets/css/project.css">
 
 </head>
 
 <body>
-    <div class="project-main-div ">
+
     <div class="">
         <nav class="navbar navbar-expand-lg navbar-light navbar-main-diva fixed-top">
             <div class="container-fluid navbar-padding">
@@ -37,7 +38,7 @@
                     <!-- Center content -->
                     <ul class="navbar-nav m-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                            <a class="nav-link " aria-current="page" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link " aria-current="page" href="about.html">About</a>
@@ -46,7 +47,7 @@
                             <a class="nav-link " aria-current="page" href="services.html">Services</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link " aria-current="page" href="#">Projects</a>
+                            <a class="nav-link active" aria-current="page" href="#">Projects</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link " aria-current="page" href="#">Blogs</a>
@@ -77,217 +78,70 @@
         <input placeholder="type here" id="searchbox" type="search" />
     </div>
  
-
-
-        <div class="container-fluid margin-for-fixed-navbar">
-            <div class="  row ps-lg-4 min-height-h d-flex justify-content-center align-items-center">
-                <div class="col-lg-4">
-                    <div class="row">
-                        <div class="col-2 d-flex justify-content-center align-items-center pe-lg-4">
-                            <div>
-                                <img src="assets/svg/Group.svg" alt="" class="svg-project">
-                                <img src="assets/svg/Group 37.svg" alt="" class="svg-project">
-                                <img src="assets/svg/left-quote 1.svg" alt="" class="svg-project">
-                                <img src="assets/svg/bi_twitter.svg" alt="" class="svg-project">
-                            </div>
-                        </div>
-                        <div class="col-10 d-flex justify-content-center align-items-center ">
-                            <div class="padding-for-b-projeject">
-                                <h1 class="m-0 project-heading">Innovative Solutions for Every Build</h1>
-                                <a href="" class="btn btn-project mt-4 ms-2">Start your project</a>
-                            </div>
-
-                        </div>
-                    </div>
-
-                </div>
-                <div class="col-lg-8 p-0">
-
-                    <div class="slider-container">
-                        <div class="slider" id="slider">
-                            <!-- Images will be dynamically added here -->
-                        </div>
-                    </div>
-                    <div class="d-flex justify-content-center text-white counter-project mt-3 mb-4">
-                    <span class="count-number-slider">   <span  id="currentIndex">1</span>/</span><span  id="totalImages"></span>
-                        <hr class="project-line">
-                        <i class="bi bi-chevron-left cousor-pointer" id="prevButton"></i>
-                        <i class="bi bi-chevron-right cousor-pointer" id="nextButton"></i>
-                    </div>
-
-                    <script>
-                        // Image array containing the slider images
-                        const images = [
-                            "assets/img/Rectangle 50.webp",
-                            "assets/img/Rectangle 51.webp",
-                            "assets/img/Rectangle 52.webp",
-                            "assets/img/Rectangle 51.webp",
-                            "assets/img/Rectangle 52.webp"
-                        ];
-
-                        // Getting references to HTML elements
-                        const slider = document.getElementById('slider');
-                        const currentIndexDisplay = document.getElementById('currentIndex');
-                        const totalImagesDisplay = document.getElementById('totalImages');
-                        const prevButton = document.getElementById('prevButton');
-                        const nextButton = document.getElementById('nextButton');
-
-                        let currentIndex = 0; // Current image index
-
-                        // Initialize total images display
-                        totalImagesDisplay.textContent = images.length;
-
-                        // Function to update the slider
-                        function updateSlider() {
-                            slider.innerHTML = ''; // Clear existing images
-
-                            // Calculate indices for previous and next images
-                            const prevIndex = (currentIndex - 1 + images.length) % images.length;
-                            const nextIndex = (currentIndex + 1) % images.length;
-
-                            // Create the previous image element
-                            const imgPrev = document.createElement('img');
-                            imgPrev.src = images[prevIndex];
-                            imgPrev.className = 'img-slider1';
-
-                            // Create the current (center) image element
-                            const imgCurrent = document.createElement('img');
-                            imgCurrent.src = images[currentIndex];
-                            imgCurrent.className = 'img-slider2';
-
-                            // Create the next image element
-                            const imgNext = document.createElement('img');
-                            imgNext.src = images[nextIndex];
-                            imgNext.className = 'img-slider1';
-
-                            // Append images to the slider
-                            slider.appendChild(imgPrev);
-                            slider.appendChild(imgCurrent);
-                            slider.appendChild(imgNext);
-
-                            // Update the current slide number display
-                            currentIndexDisplay.textContent = currentIndex + 1; // Add 1 to index for display
-                        }
-
-                        // Event listener for previous button
-                        prevButton.addEventListener('click', () => {
-                            currentIndex = (currentIndex - 1 + images.length) % images.length; // Circular navigation
-                            updateSlider();
-                        });
-
-                        // Event listener for next button
-                        nextButton.addEventListener('click', () => {
-                            currentIndex = (currentIndex + 1) % images.length; // Circular navigation
-                            updateSlider();
-                        });
-
-                        // Initialize the slider
-                        updateSlider();
-
-                    </script>
-
-                </div>
+    <div class="container-fluid margin-for-fixed-navbar services-first-container">
+        <div class="navbar-padding ">
+            <h1 class="services-first-container-heading" >Latest Projects</h1>
+        <div class="row mt-4">
+            <div class="col-md-6 mt-4">
+                <h3 class="label-project-colm1 m-0">6438 Reed Creek</h3>
+                <h3 class="project-date-colm1 m-0 ">2022-2024</h3>
+                <img src="assets/img/Image.webp" alt="" class="project-image-colm1">
 
             </div>
-
-        </div>
-    </div>
-    <div class="bg-white container-fluid ">
-        <div class="row justify-content-between navbar-padding mt-5 mb-5">
-            <div class="col-lg-5 project-service-colm"> <img src="assets/img/modern-vintage-interior-living-room-blueprint-home-decor-concept-green-couch-with-marble-table-blue-wall-hardwood-flooring-3d-render 1 (2).webp" alt="" class="service-project-img">
+            <div class="col-md-6 mt-4">
+                <h3 class="label-project-colm1 m-0">29283 Diego Expressway</h3>
+                <h3 class="project-date-colm1 m-0 ">2022-2024</h3>
+                <img src="assets/img/Image (1).webp" alt="" class="project-image-colm1">
             </div>
-            <div class="col-lg-5 project-service-colm">
-                <h1 class="project-service-heading mt-2">Services Provided by us</h1>
-                <p class="project-service-paragraph mt-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type</p>
-                <a class="btn btn-project-service mt-5">Discover More</a>
+            <div class="col-md-6 mt-4">
+                <h3 class="label-project-colm1 m-0">00366 Kihn Keys</h3>
+                <h3 class="project-date-colm1 m-0 ">2022-2024</h3>
+                <img src="assets/img/Image (3).webp" alt="" class="project-image-colm1">
             </div>
-            <div class="row justify-content-around  mt-5">
-                <div class="col-lg-3 col-md-5 justify-content-center">
-                    <div class="d-flex justify-content-center">
-                        <img src="assets/svg/Group (3).svg" alt="" class="project-making-quality-img">
-
-                    </div>
-                    <h1 class="project-making-quality-heading mt-4">Interior Planing</h1>
-                    <p class="project-making-quality-paragraph">Lorem Ipsum is simply
-                        dummy text of the printing and
-                        typesetting industry.</p>
-
-                </div>
-                <div class="col-lg-3 col-md-5 mt-md-0 mt-5">
-                    <div class="d-flex justify-content-center">
-                        <img src="assets/svg/Group (2).svg" alt="" class="project-making-quality-img">
-
-                    </div>
-                    <h1 class="project-making-quality-heading mt-4" >Architecture</h1>
-                    <p class="project-making-quality-paragraph">Lorem Ipsum is simply
-                        dummy text of the printing and
-                        typesetting industry.</p>
-                </div>
-                <div class="col-lg-3 col-md-5 mt-lg-0 mt-5">
-                    <div class="d-flex justify-content-center">
-                        <img src="assets/svg/Group (1).svg" alt="" class="project-making-quality-img">
-
-                    </div>
-                    <h1 class="project-making-quality-heading mt-4">Exterior</h1>
-                    <p class="project-making-quality-paragraph">Lorem Ipsum is simply
-                        dummy text of the printing and
-                        typesetting industry.</p>
-                </div>
-        </div>
-        </div>
-
-
-    </div>
-    <div class="container-fluid how-work-container">
-        <div class=" navbar-padding pb-5">
-
-            <div class="d-flex justify-content-lg-start justify-content-center">
-            <div class="how-work-colm ">
-            
-                <h1 class="heading-how-to-work mt-5">How we Work</h1>
-                <p class="project-making-quality-paragraph text-start pe-2 mt-4 pt-2">Lorem Ipsum is simply dummy text
-                    the printing and typesetting industry.
-                    Lorem Ipsum has been.</p>
-            
-
-        </div>
-        </div>
-        
-        <div class="row how-work-row2  justify-content-lg-start justify-content-center">
-            <div class="col-3 card">
-                <h1 class="how-work-row2-numbering">01</h1>
-                <h3 class="how-work-row2-heading">Statement of
-                    the problem</h1>
-                    <p class="project-making-quality-paragraph text-start">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.</p>
+            <div class="col-md-6 mt-4">
+                <h3 class="label-project-colm1 m-0">81226 Kory Flat</h3>
+                <h3 class="project-date-colm1 m-0 ">2022-2024</h3>
+                <img src="assets/img/Image (2).webp" alt="" class="project-image-colm1">
             </div>
-            <div class="col-3 card">
-                <h1 class="how-work-row2-numbering">02</h1>
-                <h3 class="how-work-row2-heading">Project
-                    presentation</h1>
-                    <p class="project-making-quality-paragraph text-start">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.</p>
-            </div>
-            <div class="col-3 card">
-                <h1 class="how-work-row2-numbering">03</h1>
-                <h3 class="how-work-row2-heading">Development
-                    of renderings</h1>
-                    <p class="project-making-quality-paragraph text-start">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.</p>
-            </div>
+            <div>
 
+            </div>
         </div>
+            <h1 class="services-first-container-heading pt-4" >Latest Projects</h1>
+        <div class="row pb-5">
+            <div class="col-lg-3 col-sm-6 mt-4">
+                <h3 class="label-project-colm1 m-0">991 Alexzander Track</h3>
+                <h3 class="project-date-colm1 m-0 ">2022-2024</h3>
+                <img src="assets/img/Image (4).webp" alt="" class="project-image-colm2">
 
+            </div>
+            <div class="col-lg-3 col-sm-6 mt-4">
+                <h3 class="label-project-colm1 m-0">0144 Monserrat Mountain</h3>
+                <h3 class="project-date-colm1 m-0 ">2022-2024</h3>
+                <img src="assets/img/Image (5).webp" alt="" class="project-image-colm2">
+            </div>
+            <div class="col-lg-3 col-sm-6 mt-4">
+                <h3 class="label-project-colm1 m-0">087 Ignatius Square</h3>
+                <h3 class="project-date-colm1 m-0 ">2022-2024</h3>
+                <img src="assets/img/Image (6).webp" alt="" class="project-image-colm2">
+            </div>
+            <div class="col-lg-3 col-sm-6 mt-4">
+                <h3 class="label-project-colm1 m-0">3696 Parker Village</h3>
+                <h3 class="project-date-colm1 m-0 ">2022-2024</h3>
+                <img src="assets/img/Image (7).webp" alt="" class="project-image-colm2">
+            </div>
+            <div>
+
+            </div>
         </div>
 
     </div>
-    <div class="container-fluid bg-white mb-4">
-        <h1 class="lastest-project-heading mt-5 mb-4">Our Latest Project</h1>
-        <div class="row mt-3 pt-3">
-            <div class="col-lg-3 col-sm-6 mt-sm-0 mt-3  latest-photo-colm" ><img src="assets/img/living-room-interior-with-cozy-luxury-armchair-green-wall-3d-rendering 1.webp" alt="" class="lastest-project-photo"></div>
-            <div class="col-lg-3 col-sm-6 mt-sm-0 mt-3 latest-photo-colm" ><img src="assets/img/living-room-loft-industrial-style-with-blue-sofa-empty-concrete-wall-3d-rendering 1 (2).webp" alt="" class="lastest-project-photo"></div>
-            <div class="col-lg-3 col-sm-6 mt-lg-0 mt-3 latest-photo-colm" ><img src="assets/img/living-room-with-yellow-armchair-empty-dark-blue-wall-background-3d-rendering 1.webp" alt="" class="lastest-project-photo"></div>
-            <div class="col-lg-3 col-sm-6 mt-lg-0 mt-3 latest-photo-colm" ><img src="assets/img/3d-rendering-modern-dining-room-living-room-with-luxury-decor (1) 1.webp" alt="" class="lastest-project-photo"></div>
-        </div>
-
     </div>
+
+   
+   
+  
+    
     <div class="last-container-about about-fourth-row   d-flex justify-content-center">
         <div class="container mt-5 navbar-padding">
             <div class="mt-4 text-center">
