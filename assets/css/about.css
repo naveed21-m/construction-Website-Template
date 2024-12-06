@@ -1,0 +1,289 @@
+.body {
+    overflow: hidden;
+}
+
+/* navbar  */
+@font-face {
+    font-family: 'Proxima-Nova-Bold';
+    src: url('../fonts/Proxima-Nova-Bold.otf') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'WorkSans-Regular';
+    src: url('../fonts/WorkSans-Regular.otf') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Proxima-Nova-regular';
+    src: url('../fonts/ProximaNova-Regular.otf') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'WorkSans-Bold';
+    src: url('../fonts/WorkSans-Bold.otf') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Yrsa-Regular';
+    src: url('../fonts/Yrsa-Regular.ttf') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.about-page-main-colom {
+    margin-top: 95px;
+}
+
+.about-first-small-heading {
+    font-family: 'WorkSans-Regular';
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 48px;
+    letter-spacing: 0.86em;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #5F3819;
+}
+
+.about-second-small-heading {
+    font-family: 'WorkSans-Bold';
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 48px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #201F1D;
+
+}
+
+.about-first-small-para {
+    font-family: 'WorkSans-Regular';
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 34px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #4F4F4F;
+    display: flex;
+    max-width: 575px;
+    width: 100%;
+}
+
+.about-first-img {
+    max-width: 575px;
+    width: 100%;
+    max-height: 717px;
+    width: 100%;
+
+
+}
+
+.about-first-btn {
+    background-color: #FFD3AF;
+    padding: 20px 25px;
+    font-family: 'WorkSans-Regular';
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 22px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #201F1D;
+}
+
+.about-second-row-heading {
+    font-family: 'Yrsa-Regular';
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 48px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #201F1D;
+}
+
+.about-second-row {
+    margin-top: 200px;
+    /* margin-bottom: 200px; */
+}
+
+.about-second-row-col {
+    border-right: 1px solid #989898;
+}
+
+.about-second-row-col:last-child {
+    border-right: none;
+}
+
+@media (max-width: 992px) {
+    .about-second-row-col {
+        border-right: none;
+        margin-bottom: 20px;
+    }
+}
+
+
+.about-second-row-heading-second {
+    font-family: 'WorkSans-Regular';
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 34px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #4F4F4F;
+}
+
+.third-row-first-heading {
+    font-family: 'WorkSans-bold';
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 55px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+}
+
+.third-row-first-img {
+    max-width: 396px;
+    width: 100%;
+    max-height: 510px;
+    height: 100%;
+
+}
+
+.third-row-second-heading {
+    font-family: 'WorkSans-regular';
+    font-size: 33px;
+    font-weight: 600;
+    line-height: 38px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #201F1D;
+
+}
+
+.third-row-third-heading {
+    font-family: 'WorkSans-regular';
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 34px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #4F4F4F;
+
+
+}
+
+.about-fourth-row {
+    background-color: #F3F4F6;
+    padding: 20px 50px;
+    /* margin: 0; */
+
+}
+
+.last-container-about .navbar-padding {
+    margin: 13px 0%;
+}
+
+@media (max-width:400px) {
+    .last-container-about .about-fourth-row {
+        background-color: rgba(243, 244, 246, 1);
+        padding: 20px 0px;
+        /* margin: 0; */
+
+    }
+
+    .last-container-about .navbar-padding {
+        margin: 13px 0%;
+    }
+
+
+}
+
+.fouth-row-first-heading {
+    font-family: 'WorkSans-bold';
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 55px;
+    letter-spacing: 0.01em;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+}
+
+.big-number-heading {
+    font-family: 'WorkSans-regular';
+    font-size: 170px;
+    font-weight: 600;
+    line-height: 170px;
+    letter-spacing: -0.01em;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #D0D2DF;
+}
+
+.fourth-row-small-first-small-para {
+    font-family: 'WorkSans-regular';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 34px;
+    letter-spacing: -0.01em;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+}
+
+.fourth-row-small-second-small-para {
+    font-family: 'WorkSans-regular';
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: -0.01em;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #201F1D;
+}
+
+.fourth-row-small-third-small-para {
+    font-family: 'WorkSans-regular';
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #4F4F4F;
+}
+
+.small-month-name-about {
+    font-family: 'WorkSans-regular';
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: -0.01em;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #EB7A1C;
+}
+
+.service-first-heading {}

@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/about.css">
+
+</head>
+
+<body>
+    <div class="project-main-div ">
+    <div class="">
+        <nav class="navbar navbar-expand-lg navbar-light navbar-main-diva fixed-top">
+            <div class="container-fluid navbar-padding">
+                <!-- Logo -->
+                <a class="navbar-brand m-0" href="#">
+                    <img src="assets/img/Logo.webp" alt="Logo" width="169" height="42"
+                        class="d-inline-block align-text-top">
+
+                </a>
+
+                <!-- Toggler for smaller screens -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Navbar content -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <!-- Center content -->
+                    <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="#">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="#">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="#">Blogs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="#">Contact Us</a>
+                        </li>
+
+
+
+                    </ul>
+
+                    <!-- Search bar -->
+                    <form class="d-flex">
+                        <a href='#search'>
+                            <img src="assets/svg/Vector.svg" alt="" width="30px" height="30px">
+
+                        </a>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div id="search" class="fade">
+        <a href="#" class="close-btn" id="close-search">
+            <i class="bi bi-x " style="font-size: 42px;"></i>
+        </a>
+        <input placeholder="type here" id="searchbox" type="search" />
+    </div>
+ 
+
+
+        <div class="container-fluid margin-for-fixed-navbar">
+            <div class="  row ps-lg-4 min-height-h d-flex justify-content-center align-items-center">
+                <div class="col-lg-4">
+                    <div class="row">
+                        <div class="col-2 d-flex justify-content-center align-items-center pe-lg-4">
+                            <div>
+                                <img src="assets/svg/Group.svg" alt="" class="svg-project">
+                                <img src="assets/svg/Group 37.svg" alt="" class="svg-project">
+                                <img src="assets/svg/left-quote 1.svg" alt="" class="svg-project">
+                                <img src="assets/svg/bi_twitter.svg" alt="" class="svg-project">
+                            </div>
+                        </div>
+                        <div class="col-10 d-flex justify-content-center align-items-center ">
+                            <div class="padding-for-b-projeject">
+                                <h1 class="m-0 project-heading">Innovative Solutions for Every Build</h1>
+                                <a href="" class="btn btn-project mt-4 ms-2">Start your project</a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-8 p-0">
+
+                    <div class="slider-container">
+                        <div class="slider" id="slider">
+                            <!-- Images will be dynamically added here -->
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center text-white counter-project mt-3 mb-4">
+                    <span class="count-number-slider">   <span  id="currentIndex">1</span>/</span><span  id="totalImages"></span>
+                        <hr class="project-line">
+                        <i class="bi bi-chevron-left cousor-pointer" id="prevButton"></i>
+                        <i class="bi bi-chevron-right cousor-pointer" id="nextButton"></i>
+                    </div>
+
+                    <script>
+                        // Image array containing the slider images
+                        const images = [
+                            "assets/img/Rectangle 50.webp",
+                            "assets/img/Rectangle 51.webp",
+                            "assets/img/Rectangle 52.webp",
+                            "assets/img/Rectangle 51.webp",
+                            "assets/img/Rectangle 52.webp"
+                        ];
+
+                        // Getting references to HTML elements
+                        const slider = document.getElementById('slider');
+                        const currentIndexDisplay = document.getElementById('currentIndex');
+                        const totalImagesDisplay = document.getElementById('totalImages');
+                        const prevButton = document.getElementById('prevButton');
+                        const nextButton = document.getElementById('nextButton');
+
+                        let currentIndex = 0; // Current image index
+
+                        // Initialize total images display
+                        totalImagesDisplay.textContent = images.length;
+
+                        // Function to update the slider
+                        function updateSlider() {
+                            slider.innerHTML = ''; // Clear existing images
+
+                            // Calculate indices for previous and next images
+                            const prevIndex = (currentIndex - 1 + images.length) % images.length;
+                            const nextIndex = (currentIndex + 1) % images.length;
+
+                            // Create the previous image element
+                            const imgPrev = document.createElement('img');
+                            imgPrev.src = images[prevIndex];
+                            imgPrev.className = 'img-slider1';
+
+                            // Create the current (center) image element
+                            const imgCurrent = document.createElement('img');
+                            imgCurrent.src = images[currentIndex];
+                            imgCurrent.className = 'img-slider2';
+
+                            // Create the next image element
+                            const imgNext = document.createElement('img');
+                            imgNext.src = images[nextIndex];
+                            imgNext.className = 'img-slider1';
+
+                            // Append images to the slider
+                            slider.appendChild(imgPrev);
+                            slider.appendChild(imgCurrent);
+                            slider.appendChild(imgNext);
+
+                            // Update the current slide number display
+                            currentIndexDisplay.textContent = currentIndex + 1; // Add 1 to index for display
+                        }
+
+                        // Event listener for previous button
+                        prevButton.addEventListener('click', () => {
+                            currentIndex = (currentIndex - 1 + images.length) % images.length; // Circular navigation
+                            updateSlider();
+                        });
+
+                        // Event listener for next button
+                        nextButton.addEventListener('click', () => {
+                            currentIndex = (currentIndex + 1) % images.length; // Circular navigation
+                            updateSlider();
+                        });
+
+                        // Initialize the slider
+                        updateSlider();
+
+                    </script>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <div class="bg-white container-fluid ">
+        <div class="row justify-content-between navbar-padding mt-5 mb-5">
+            <div class="col-lg-5 project-service-colm"> <img src="assets/img/modern-vintage-interior-living-room-blueprint-home-decor-concept-green-couch-with-marble-table-blue-wall-hardwood-flooring-3d-render 1 (2).webp" alt="" class="service-project-img">
+            </div>
+            <div class="col-lg-5 project-service-colm">
+                <h1 class="project-service-heading mt-2">Services Provided by us</h1>
+                <p class="project-service-paragraph mt-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type</p>
+                <a class="btn btn-project-service mt-5">Discover More</a>
+            </div>
+            <div class="row justify-content-around  mt-5">
+                <div class="col-lg-3 col-md-5 justify-content-center">
+                    <div class="d-flex justify-content-center">
+                        <img src="assets/svg/Group (3).svg" alt="" class="project-making-quality-img">
+
+                    </div>
+                    <h1 class="project-making-quality-heading mt-4">Interior Planing</h1>
+                    <p class="project-making-quality-paragraph">Lorem Ipsum is simply
+                        dummy text of the printing and
+                        typesetting industry.</p>
+
+                </div>
+                <div class="col-lg-3 col-md-5 mt-md-0 mt-5">
+                    <div class="d-flex justify-content-center">
+                        <img src="assets/svg/Group (2).svg" alt="" class="project-making-quality-img">
+
+                    </div>
+                    <h1 class="project-making-quality-heading mt-4" >Architecture</h1>
+                    <p class="project-making-quality-paragraph">Lorem Ipsum is simply
+                        dummy text of the printing and
+                        typesetting industry.</p>
+                </div>
+                <div class="col-lg-3 col-md-5 mt-lg-0 mt-5">
+                    <div class="d-flex justify-content-center">
+                        <img src="assets/svg/Group (1).svg" alt="" class="project-making-quality-img">
+
+                    </div>
+                    <h1 class="project-making-quality-heading mt-4">Exterior</h1>
+                    <p class="project-making-quality-paragraph">Lorem Ipsum is simply
+                        dummy text of the printing and
+                        typesetting industry.</p>
+                </div>
+        </div>
+        </div>
+
+
+    </div>
+    <div class="container-fluid how-work-container">
+        <div class=" navbar-padding pb-5">
+
+            <div class="d-flex justify-content-lg-start justify-content-center">
+            <div class="how-work-colm ">
+            
+                <h1 class="heading-how-to-work mt-5">How we Work</h1>
+                <p class="project-making-quality-paragraph text-start pe-2 mt-4 pt-2">Lorem Ipsum is simply dummy text
+                    the printing and typesetting industry.
+                    Lorem Ipsum has been.</p>
+            
+
+        </div>
+        </div>
+        
+        <div class="row how-work-row2  justify-content-lg-start justify-content-center">
+            <div class="col-3 card">
+                <h1 class="how-work-row2-numbering">01</h1>
+                <h3 class="how-work-row2-heading">Statement of
+                    the problem</h1>
+                    <p class="project-making-quality-paragraph text-start">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.</p>
+            </div>
+            <div class="col-3 card">
+                <h1 class="how-work-row2-numbering">02</h1>
+                <h3 class="how-work-row2-heading">Project
+                    presentation</h1>
+                    <p class="project-making-quality-paragraph text-start">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.</p>
+            </div>
+            <div class="col-3 card">
+                <h1 class="how-work-row2-numbering">03</h1>
+                <h3 class="how-work-row2-heading">Development
+                    of renderings</h1>
+                    <p class="project-making-quality-paragraph text-start">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.</p>
+            </div>
+
+        </div>
+
+        </div>
+
+    </div>
+    <div class="container-fluid bg-white mb-4">
+        <h1 class="lastest-project-heading mt-5 mb-4">Our Latest Project</h1>
+        <div class="row mt-3 pt-3">
+            <div class="col-lg-3 col-sm-6 mt-sm-0 mt-3  latest-photo-colm" ><img src="assets/img/living-room-interior-with-cozy-luxury-armchair-green-wall-3d-rendering 1.webp" alt="" class="lastest-project-photo"></div>
+            <div class="col-lg-3 col-sm-6 mt-sm-0 mt-3 latest-photo-colm" ><img src="assets/img/living-room-loft-industrial-style-with-blue-sofa-empty-concrete-wall-3d-rendering 1 (2).webp" alt="" class="lastest-project-photo"></div>
+            <div class="col-lg-3 col-sm-6 mt-lg-0 mt-3 latest-photo-colm" ><img src="assets/img/living-room-with-yellow-armchair-empty-dark-blue-wall-background-3d-rendering 1.webp" alt="" class="lastest-project-photo"></div>
+            <div class="col-lg-3 col-sm-6 mt-lg-0 mt-3 latest-photo-colm" ><img src="assets/img/3d-rendering-modern-dining-room-living-room-with-luxury-decor (1) 1.webp" alt="" class="lastest-project-photo"></div>
+        </div>
+
+    </div>
+    <div class="last-container-about about-fourth-row   d-flex justify-content-center">
+        <div class="container mt-5 navbar-padding">
+            <div class="mt-4 text-center">
+                <span class="fouth-row-first-heading h3">
+                    Latest Blogs
+                </span>
+            </div>
+            <div class="row mt-5 ">
+                <!-- Blog 1 -->
+                <div class="col-12 col-lg-6 mb-4">
+                    <div class="d-flex flex-column flex-lg-row align-items-center gap-3">
+                        <div class="text-center">
+                            <div class="mt-3">
+                                <span class="big-number-heading display-4">01</span>
+                            </div>
+                            <div>
+                                <span class="small-month-name-about text-uppercase">nav</span>
+                            </div>
+                        </div>
+                        <div class="w-100 w-lg-75">
+                            <div class="mb-2">
+                                <span class="fourth-row-small-first-small-para d-block text-muted">
+                                    By Bernard, 1 Week Ago
+                                </span>
+                            </div>
+                            <div class="mb-2">
+                                <span class="fourth-row-small-second-small-para d-block font-weight-bold">
+                                    We’ll your next project, because nobody wants...
+                                </span>
+                            </div>
+                            <div>
+                                <span class="fourth-row-small-third-small-para d-block text-secondary">
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting.
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Blog 2 -->
+                <div class="col-12 col-lg-6 mb-4">
+                    <div class="d-flex flex-column flex-lg-row align-items-center gap-3">
+                        <div class="text-center">
+                            <div class="mt-3">
+                                <span class="big-number-heading display-4">02</span>
+                            </div>
+                            <div>
+                                <span class="small-month-name-about text-uppercase">nav</span>
+                            </div>
+                        </div>
+                        <div class="w-100 w-lg-75">
+                            <div class="mb-2">
+                                <span class="fourth-row-small-first-small-para d-block text-muted">
+                                    By Bernard, 1 Week Ago
+                                </span>
+                            </div>
+                            <div class="mb-2">
+                                <span class="fourth-row-small-second-small-para d-block font-weight-bold">
+                                    We’ll your next project, because nobody wants...
+                                </span>
+                            </div>
+                            <div>
+                                <span class="fourth-row-small-third-small-para d-block text-secondary">
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting.
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
