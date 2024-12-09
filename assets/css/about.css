@@ -2,7 +2,8 @@ body,
 html {
     margin: 0;
     padding: 0;
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
+    background-color: #F3F4F6;
 }
 
 
@@ -314,6 +315,15 @@ html {
 }
 
 .service-first-row-image {
+    max-width: 1422px;
+    max-height: 709.03px;
+    width: 100%;
+    height: 100%;
+
+
+}
+
+.blog-first-row-image {
     max-width: 1422px;
     max-height: 709.03px;
     width: 100%;
@@ -656,5 +666,181 @@ html {
     .navbar-padding-contact {
         margin: 13px 7%;
         position: relative;
+    }
+}
+
+.blog-first-heading {
+    font-family: 'WorkSans-regular';
+    font-size: 280px;
+    font-weight: 500;
+    line-height: 170px;
+    letter-spacing: -0.01em;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #D0D2DF;
+}
+
+.blog-second-heading {
+    font-family: 'WorkSans-regular';
+    font-size: 70px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: -0.01em;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #EB7A1C;
+}
+
+.blog-first-date {
+    font-family: 'WorkSans-regular';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 34px;
+    letter-spacing: -0.01em;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+}
+
+.blog-third-heading {
+    font-family: 'WorkSans-regular';
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: -0.01em;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+
+
+
+}
+
+.blog-second-col-para {
+    font-family: 'WorkSans-regular';
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #4F4F4F;
+
+}
+
+.blog-second-row-first-img {
+    max-width: 358px;
+    max-height: 224px;
+    width: 100%;
+    height: 100%;
+
+}
+
+.blog-second-row-first-heading {
+    font-family: 'WorkSans-regular';
+    font-size: 170px;
+    font-weight: 500;
+    line-height: 170px;
+    letter-spacing: -0.01em;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #D0D2DF;
+}
+
+.blog-second-row-second-heading {
+    font-family: 'WorkSans-regular';
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: -0.01em;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #EB7A1C;
+}
+
+.blog-second-row-third-heading {
+    font-family: 'WorkSans-regular';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 34px;
+    letter-spacing: -0.01em;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+}
+
+.blog-second-row-fouth-heading {
+    font-family: 'WorkSans-regular';
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: -0.01em;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+}
+
+.blog-second-row-fifth-heading {
+    font-family: 'WorkSans-regular';
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #4F4F4F;
+
+}
+
+.pagination .page-item .page-link {
+    color: #6c757d;
+    background-color: transparent;
+    border: none;
+    margin: 0 5px;
+}
+
+.pagination .page-item.active .page-link {
+    background-color: white;
+    color: black;
+    border-radius: 8px;
+}
+
+.pagination .page-item.disabled .page-link {
+    color: #ccc;
+    background-color: #f8f9fa;
+    border-color: #dee2e6;
+}
+
+.pagination {
+    justify-content: center;
+}
+
+.pagination:first-of-type {
+    justify-content: flex-start;
+}
+
+.pagination:last-of-type {
+    justify-content: flex-end;
+}
+@media (max-width: 626px) {
+    .pagination {
+        flex-wrap: wrap; /* Allow wrapping for better display on small screens */
+        justify-content: center; /* Center everything on smaller devices */
+    }
+    .pagination:first-of-type, 
+    .pagination:last-of-type {
+        justify-content: center; /* Center "Previous" and "Next" */
+    }
+    .pagination .page-item .page-link {
+        margin: 2px; /* Reduce margins for better spacing */
+        font-size: 14px; /* Smaller font size for mobile screens */
     }
 }
