@@ -300,6 +300,42 @@ document.addEventListener("DOMContentLoaded", () => {
       end: "start",
     },
   });
+  gsap.from(".left-animation", {
+    opacity: 0,
+    x: -250,
+    duration: 1,
+    scrollTrigger: {
+      trigger: ".left-animation",
+      end: "start",
+    },
+  });
+  gsap.from(".down-animation", {
+    opacity: 0,
+    y: 150,
+    duration: 1,
+    scrollTrigger: {
+      trigger: ".down-animation",
+      end: "start",
+    },
+  });
+  gsap.from(".right-animation", {
+    opacity: 0,
+    x: 250,
+    duration: 1,
+    scrollTrigger: {
+      trigger: ".right-animation",
+      end: "start",
+    },
+  });
+  gsap.from(".blog-first-row-image", {
+    opacity: 0,
+    y: 250,
+    duration: 1,
+    scrollTrigger: {
+      trigger: ".blog-first-row-image",
+      end: "start",
+    },
+  });
 
 
 
@@ -316,7 +352,7 @@ gsap.from(".about-page-main-colom .service-first-heading", {
   },
 });
 
-gsap.from(".about-page-main-colom .service-first-para", {
+gsap.from(".about-page-main-colom .service-first-para ", {
   opacity: 0,
   y: 200,
   duration: 1.2,
