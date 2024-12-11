@@ -940,18 +940,18 @@ html {
     text-decoration-skip-ink: none;
     color: #4F4F4F;
 }
-.slider-container {
+.slider-container-second {
     overflow: hidden; /* Hide overflowing content */
     position: relative;
     width: 100%;
 }
 
-.slider {
+.slider-second {
     display: inline-flex;
     animation: scroll 20s linear infinite; /* Smooth continuous scroll */
 }
 @media (max-width: 767px) {
-    .slider {
+    .slider-second {
         display: inline-flex;
         animation: scroll 5s linear infinite; /* Smooth continuous scroll */
     } 
