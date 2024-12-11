@@ -39,36 +39,48 @@ document.addEventListener("DOMContentLoaded", () => {
       start: "top bottom",
     },
   });
-  gsap.from(".img-slider1", {
+ // Animate .img-slider1 from an initial state and then to a final state
+gsap.fromTo(".img-slider1", 
+  { // from
     opacity: 0,
-    x: -50,
+    x: -60
+  }, 
+  { // to
+    opacity: 1,
+    x: 0,
     duration: 1,
-    delay:0.1,
-    scrollTrigger: {
-      trigger: ".img-slider1",
-      start: "top bottom",
-    },
-  });
-  gsap.from(".img-slider3", {
+    delay: 0.1
+  }
+);
+
+// Animate .img-slider3 from an initial state and then to a final state
+gsap.fromTo(".img-slider3", 
+  { // from
     opacity: 0,
-    x: 50,
+    x: 60
+  }, 
+  { // to
+    opacity: 1,
+    x: 0,
     duration: 1,
-    delay:0.1,
-    scrollTrigger: {
-      trigger: ".img-slider3",
-      start: "top bottom",
-    },
-  });
-  gsap.from(".img-slider2", {
+    delay: 0.1
+  }
+);
+
+// Animate .img-slider2 from an initial state and then to a final state
+gsap.fromTo(".img-slider2", 
+  { // from
     opacity: 0,
-    y: 90,
+    y: 120
+  }, 
+  { // to
+    opacity: 1,
+    y: 0,
     duration: 1,
-    delay:0.1,
-    scrollTrigger: {
-      trigger: ".img-slider3",
-      start: "top bottom",
-    },
-  });
+    delay: 0.1
+  }
+);
+
   gsap.from(".animate-plan-index-interior", {
     opacity: 0,
     x: -70,
@@ -109,16 +121,25 @@ document.addEventListener("DOMContentLoaded", () => {
       start: "top bottom",
     },
   });
-  gsap.from(".animate-icon-coial-index", {
-    opacity: 0,
-    x: -30,
-    duration: 1,
-    delay:0.1,
-    scrollTrigger: {
-      trigger: ".img-slider3",
-      start: "top bottom",
-    },
-  });
+  gsap.fromTo(".animate-icon-coial-index", 
+    { // from
+      opacity: 0,
+      x: -30
+    }, 
+    { // to
+      opacity: 1,
+      x: 0,
+      duration: 1,
+      delay: 0.1,
+      scrollTrigger: {
+        trigger: ".img-slider3",
+        start: "top bottom",
+        // Optionally, add markers to see the trigger point during debugging:
+        // markers: true
+      }
+    }
+  );
+  
   gsap.from(".index-latest-project-animation-heading", {
     opacity: 0,
     x: -100,
@@ -139,16 +160,25 @@ document.addEventListener("DOMContentLoaded", () => {
       start: "top bottom",
     },
   });
-  gsap.from(".animate-heading1-first-section-index", {
-    opacity: 0,
-    y: 70,
-    duration: 1,
-    delay:0.1,
-    scrollTrigger: {
-      trigger: ".img-slider3",
-      start: "top bottom",
-    },
-  });
+  gsap.fromTo(".animate-heading1-first-section-index", 
+    { // from
+      opacity: 0,
+      y: 70
+    }, 
+    { // to
+      opacity: 1,
+      y: 0,
+      duration: 1,
+      delay: 0.1,
+      scrollTrigger: {
+        trigger: ".img-slider3",
+        start: "top bottom",
+        // Optionally, you can also set markers to debug the trigger points
+        // markers: true
+      }
+    }
+  );
+  
   gsap.from(".animate-heading1-second-section-index", {
     opacity: 0,
     y: 70,

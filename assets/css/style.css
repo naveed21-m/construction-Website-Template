@@ -171,17 +171,20 @@ text-transform: capitalize;
 
 }
 .img-slider1{
+    opacity: 0;
     width: 28%;
     height: 390px;
     z-index: 2;
 }
 .img-slider3{
+    opacity: 0;
     width: 28%;
     height: 390px;
     z-index: 2;
 
 }
 .img-slider2{
+    opacity: 0;
     width: 40%;
     height: 472px;
     border: 2px solid white;
@@ -577,4 +580,10 @@ margin-right: 0px;
         width: 28%;
         padding: 0px;
     }
+}
+.animate-heading1-first-section-index{
+    opacity: 0;
+}
+.animate-icon-coial-index{
+    opacity: 0;
 }
