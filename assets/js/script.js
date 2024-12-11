@@ -371,3 +371,5 @@ gsap.from(".about-page-main-colom .service-first-row-image", {
     start: "top 80%",
   },
 });
+
+

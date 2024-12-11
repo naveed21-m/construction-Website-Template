@@ -612,6 +612,22 @@ html {
     position: relative;
 }
 
+@keyframes fadeInRightBackground {
+    0% {
+        transform: translateX(200px);
+        /* 200px outside container */
+        opacity: 0;
+        /* Invisible */
+    }
+
+    100% {
+        transform: translateX(0);
+        /* Move to its original position */
+        opacity: 1;
+        /* Fully visible */
+    }
+}
+
 .contact-first-row-second-col {
     background-image: url(../img/9b6b1d7eaf5ea687d9338a11c35c76be.jpeg);
     background-size: cover;
@@ -619,21 +635,18 @@ html {
     height: 600px;
     width: 400px;
     position: absolute;
-    /* Use absolute positioning */
     right: 0;
-    /* Align to the extreme right */
     top: 0;
-    /* Align to the top of the row */
     display: flex;
     justify-content: start;
     align-items: center;
+    animation: fadeInRightBackground 1s ease-out forwards;
 }
+
 
 .navbar-padding-contact {
     margin: 0px 0% 13px 7%;
-    /* Adjusted as needed */
     position: relative;
-    /* Relative positioning for the parent container */
 }
 
 @media (max-width: 1240px) {
@@ -830,17 +843,130 @@ html {
 .pagination:last-of-type {
     justify-content: flex-end;
 }
+
 @media (max-width: 626px) {
     .pagination {
-        flex-wrap: wrap; /* Allow wrapping for better display on small screens */
-        justify-content: center; /* Center everything on smaller devices */
+        flex-wrap: wrap;
+        /* Allow wrapping for better display on small screens */
+        justify-content: center;
+        /* Center everything on smaller devices */
     }
-    .pagination:first-of-type, 
+
+    .pagination:first-of-type,
     .pagination:last-of-type {
-        justify-content: center; /* Center "Previous" and "Next" */
+        justify-content: center;
+        /* Center "Previous" and "Next" */
     }
+
     .pagination .page-item .page-link {
-        margin: 2px; /* Reduce margins for better spacing */
-        font-size: 14px; /* Smaller font size for mobile screens */
+        margin: 2px;
+        /* Reduce margins for better spacing */
+        font-size: 14px;
+        /* Smaller font size for mobile screens */
     }
 }
+
+.contact-phone-heading {
+    font-family: 'WorkSans-regular';
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+}
+
+.contact-phone-number {
+    font-family: 'WorkSans-regular';
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #DD5471;
+}
+
+.new-row-first-heading {
+    font-family: 'WorkSans-bold';
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 55px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+}
+
+.new-row-slider-card {
+    background-color: white;
+    padding: 40px 40px;
+
+}
+
+.new-row-slider-card-name {
+    font-family: 'WorkSans-bold';
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+}
+
+.new-row-slider-card-role {
+    font-family: 'WorkSans-Regular';
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 15px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+}
+
+.new-row-slider-card-para {
+    font-family: 'WorkSans-Regular';
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #4F4F4F;
+}
+.slider-container {
+    overflow: hidden; /* Hide overflowing content */
+    position: relative;
+    width: 100%;
+}
+
+.slider {
+    display: inline-flex;
+    animation: scroll 20s linear infinite; /* Smooth continuous scroll */
+}
+@media (max-width: 767px) {
+    .slider {
+        display: inline-flex;
+        animation: scroll 5s linear infinite; /* Smooth continuous scroll */
+    } 
+}
+.new-row-slider-card {
+    flex: 0 0 auto; /* Prevent shrinking */
+    margin: 0 10px; /* Add spacing between cards */
+    width: 575px; /* Adjust card width */
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}   
