@@ -298,9 +298,7 @@ text-transform: capitalize;
 .counter-project{
     margin-left: 17%;
 }
-.min-height-h{
-    min-height: 100vh;
-}
+
 
 .cousor-pointer{
     cursor: pointer;
@@ -334,6 +332,24 @@ text-transform: capitalize;
     font-size: 36px;
     line-height: 36px;
     color: rgba(32, 31, 29, 1);
+}
+@media(max-width:500px){
+    .project-service-heading{
+        font-family: 'WorkSans-Bold';
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 36px;
+        color: rgba(32, 31, 29, 1);
+    }
+}
+@media(max-width:406px){
+    .project-service-heading{
+        font-family: 'WorkSans-Bold';
+        font-weight: 700;
+        font-size: 23px;
+        line-height: 36px;
+        color: rgba(32, 31, 29, 1);
+    }
 }
 .index-unique-make-heading{
     font-family: 'WorkSans-Bold';
@@ -425,7 +441,7 @@ text-transform: capitalize;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    min-height: 100vh;
+    /* min-height: 100vh; */
 }
 
 .heading-how-to-work{
@@ -509,6 +525,16 @@ text-transform: capitalize;
     font-weight: 700;
     color: rgba(32, 31, 29, 1);
     line-height: 47px;
+}
+@media(max-width:400px){
+    .lastest-project-heading{
+        font-size: 34px;
+        font-family: 'WorkSans-Bold';
+    
+        font-weight: 700;
+        color: rgba(32, 31, 29, 1);
+        line-height: 47px;
+    }
 }
 .footer-container{
     background-color: rgba(32, 31, 29, 1);

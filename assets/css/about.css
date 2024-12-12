@@ -232,7 +232,18 @@ html {
     text-decoration-skip-ink: none;
 
 }
-
+@media(max-width:425px){
+    .fouth-row-first-heading {
+        font-family: 'WorkSans-bold';
+        font-size: 40px;
+    }
+}
+@media(max-width:380px){
+    .fouth-row-first-heading {
+        font-family: 'WorkSans-bold';
+        font-size: 32px;
+    }
+}
 .big-number-heading {
     font-family: 'WorkSans-regular';
     font-size: 170px;
@@ -484,7 +495,7 @@ html {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    min-height: 100vh;
+    min-height: 580px;
     display: flex;
     justify-content: end;
     align-items: flex-end;
@@ -901,7 +912,19 @@ html {
     text-decoration-skip-ink: none;
 
 }
-
+@media(max-width:600px){
+    .new-row-first-heading {
+        font-family: 'WorkSans-bold';
+        font-size: 31px;
+        font-weight: 700;
+        line-height: 40px;
+        letter-spacing: 0.01em;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+    
+    }
+}
 .new-row-slider-card {
     background-color: white;
     padding: 40px 40px;
