@@ -311,7 +311,7 @@ gsap.fromTo(".img-slider2",
     duration: 1,
     scrollTrigger: {
       trigger: ".blog-content-animation-class",
-      end: "start",
+      center: "start",
     },
   });
   gsap.from(".service-fifth-row-col", {

@@ -59,6 +59,32 @@ html {
     text-decoration-skip-ink: none;
     color: #5F3819;
 }
+@media(max-width:600px){
+    .about-first-small-heading {
+        font-family: 'WorkSans-Regular';
+        font-size: 22px;
+        font-weight: 500;
+        line-height: 48px;
+        letter-spacing: 0.66em;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        color: #5F3819;
+    }
+}
+@media(max-width:400px){
+    .about-first-small-heading {
+        font-family: 'WorkSans-Regular';
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 48px;
+        letter-spacing: 0.66em;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        color: #5F3819;
+    }
+}
 
 .about-second-small-heading {
     font-family: 'WorkSans-Bold';
@@ -69,6 +95,20 @@ html {
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
     color: #201F1D;
+
+}
+@media(max-width:600px){
+    .about-second-small-heading {
+        font-family: 'WorkSans-Bold';
+        font-size: 28px;
+        font-weight: 800;
+        line-height: 28px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        color: #201F1D;
+    
+    }
 
 }
 
@@ -161,6 +201,18 @@ html {
     text-decoration-skip-ink: none;
 
 }
+@media(max-width:450px){
+    .third-row-first-heading {
+        font-family: 'WorkSans-bold';
+        font-size: 34px;
+        font-weight: 700;
+        line-height: 55px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+    
+    }
+}
 
 .third-row-first-img {
     max-width: 396px;
@@ -181,7 +233,20 @@ html {
     color: #201F1D;
 
 }
+@media(max-width:400px){
+    .third-row-second-heading {
+        font-family: 'WorkSans-regular';
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 38px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        color: #201F1D;
+    
+    }
 
+}
 .third-row-third-heading {
     font-family: 'WorkSans-regular';
     font-size: 20px;
