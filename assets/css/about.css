@@ -254,7 +254,7 @@ html {
     text-align: left;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
-
+    color: rgba(0, 0, 0, 1);
 }
 
 .fourth-row-small-second-small-para {
@@ -283,13 +283,13 @@ html {
 .small-month-name-about {
     font-family: 'WorkSans-regular';
     font-size: 20px;
-    font-weight: 500;
+    font-weight: 600;
     line-height: 20px;
     letter-spacing: -0.01em;
     text-align: left;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
-    color: #EB7A1C;
+    color: rgba(95, 56, 25, 1);
 }
 
 .service-first-heading {
