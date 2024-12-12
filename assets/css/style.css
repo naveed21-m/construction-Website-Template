@@ -171,22 +171,19 @@ text-transform: capitalize;
 
 }
 .img-slider1{
-    opacity: 0;
-    width: 28%;
-    height: 390px;
+    width: 27%;
+    height: 440px;
     z-index: 2;
 }
 .img-slider3{
-    opacity: 0;
-    width: 28%;
-    height: 390px;
+    width: 27%;
+    height: 440px;
     z-index: 2;
 
 }
 .img-slider2{
-    opacity: 0;
     width: 40%;
-    height: 472px;
+    height: 510px;
     border: 2px solid white;
     z-index: 2;
 
@@ -426,6 +423,7 @@ text-transform: capitalize;
 .how-work-container{
     background-image: url('../img/Frame\ 13.png');
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
     min-height: 100vh;
 }
@@ -585,5 +583,8 @@ margin-right: 0px;
     opacity: 0;
 }
 .animate-icon-coial-index{
+    opacity: 0;
+}
+.slider-img-index{
     opacity: 0;
 }

@@ -106,7 +106,7 @@
                 <div class="col-lg-8 p-0">
 
                     <div class="slider-container">
-                        <div class="slider" id="slider">
+                        <div class="slider slider-img-index" id="slider">
                             <!-- Images will be dynamically added here -->
                         </div>
                     </div>
@@ -159,10 +159,12 @@
                             imgCurrent.src = images[currentIndex];
                             imgCurrent.className = 'img-slider2';
 
+
                             // Create the next image element
                             const imgNext = document.createElement('img');
                             imgNext.src = images[nextIndex];
                             imgNext.className = 'img-slider3';
+
 
                             // Append images to the slider
                             slider.appendChild(imgPrev);
@@ -197,7 +199,7 @@
         </div>
     </div>
     <div class="bg-white container-fluid ">
-        <div class="row justify-content-between navbar-padding mt-5 mb-5">
+        <div class="row justify-content-between navbar-padding pt-5 mt-0 mb-0 pb-5">
             <div class="col-lg-5 project-service-colm animate-heading1-second-section-index"> <img
                     src="assets/img/modern-vintage-interior-living-room-blueprint-home-decor-concept-green-couch-with-marble-table-blue-wall-hardwood-flooring-3d-render 1 (2).webp"
                     alt="" class="service-project-img">
@@ -248,7 +250,7 @@
 
     </div>
     <div class="container-fluid how-work-container">
-        <div class=" navbar-padding pb-5">
+        <div class=" navbar-padding mt-0 pb-5">
 
             <div class="d-flex justify-content-lg-start justify-content-center">
                 <div class="how-work-colm index-howWork-headig-animate">
@@ -294,7 +296,7 @@
         </div>
 
     </div>
-    <div class="container-fluid bg-white mb-4 " style="overflow: hidden;">
+    <div class="container-fluid bg-white mb-0 pb-4 " style="overflow: hidden;">
         <h1 class="lastest-project-heading mt-5 mb-4 index-latest-project-animation-heading">Our Latest Project</h1>
         <div class="row mt-3 pt-3 index-latest-project-animation-img">
             <div class="col-lg-3 col-sm-6 mt-sm-0 mt-3  latest-photo-colm"><img

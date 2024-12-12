@@ -66,6 +66,17 @@ gsap.fromTo(".img-slider3",
     delay: 0.1
   }
 );
+gsap.fromTo(".slider-img-index", 
+  { // from
+    opacity: 0,
+   
+  }, 
+  { // to
+    opacity: 1,
+    duration: 0.5,
+    delay: 0.1
+  }
+);
 
 // Animate .img-slider2 from an initial state and then to a final state
 gsap.fromTo(".img-slider2", 
