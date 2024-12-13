@@ -453,8 +453,8 @@ html {
 
 .service-second-row-first-heading {
     font-family: 'WorkSans-regular';
-    font-size: 20px;
-    font-weight: 500;
+    font-size: 17px;
+    font-weight: 600;
     line-height: 38px;
     text-align: left;
     text-underline-position: from-font;
@@ -483,7 +483,15 @@ html {
     text-decoration-skip-ink: none;
 
 }
+@media(max-width:800px){
+    .service-third-row-heading {
 
+        font-size: 35px;
+     
+    
+    }
+
+}
 .service-third-row-para {
     font-family: 'WorkSans-regular';
     font-size: 20px;
@@ -525,6 +533,17 @@ html {
     text-align: left;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
+    text-transform:  capitalize;
+
+}
+@media(max-width:420px){
+    .service-fourth-row-first-heading {
+
+        font-size: 25px;
+     
+    
+    }
+
 
 }
 

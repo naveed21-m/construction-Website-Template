@@ -320,7 +320,7 @@ gsap.fromTo(".img-slider2",
     duration: 1,
     scrollTrigger: {
       trigger: ".service-fifth-row-col",
-      end: "start",
+      center: "start",
     },
   });
   gsap.from(".fourth-service-row-animation", {
@@ -328,8 +328,17 @@ gsap.fromTo(".img-slider2",
     y: 250,
     duration: 1,
     scrollTrigger: {
-      trigger: ".fourth-service-row-animation",
-      end: "start",
+      trigger: ".fourth-service-row-col2-animation",
+      center: "start",
+    },
+  });
+  gsap.from(".fourth-service-row-col2-animation", {
+    opacity: 0,
+    x: -150,
+    duration: 1,
+    scrollTrigger: {
+      trigger: ".fourth-service-row-col2-animation",
+      center: "start",
     },
   });
   gsap.from(".service-second-row-col", {

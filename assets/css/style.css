@@ -666,6 +666,16 @@ margin-right: 0px;
     color: white;
     transition: .2s;
 }
+
+ .svg-search.active{
+    /* opacity: 0; */
+    right: 17px;
+    cursor: pointer ;
+    z-index: 10 !important;
+    width: 15px;
+    
+    z-index: -1;
+}
 @media(max-width:990px){
     .box .svg-search {
         position: absolute;
@@ -676,14 +686,14 @@ margin-right: 0px;
         color: white;
         transition: .2s;
     }
+    .box .svg-search.active {
+        position: absolute;
+        top: 50%;
+        left: 155px;
+        transform: translate(-50%, -50%);
+        font-size: 26px;
+        color: white;
+        transition: .2s;
+    }
 
-}
- .svg-search.active{
-    /* opacity: 0; */
-    right: 17px;
-    cursor: pointer ;
-    z-index: 10 !important;
-    width: 15px;
-    
-    z-index: -1;
 }
