@@ -414,3 +414,9 @@ gsap.from(".about-page-main-colom .service-first-row-image", {
 });
 
 
+
+function ahmad(){
+    document.getElementById('index_box_input').classList.add('active');
+    document.getElementById('index_box_svg2').style='display:none;';
+    document.getElementById('index_box_svg').classList.add('active');
+}

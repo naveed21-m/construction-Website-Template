@@ -1,0 +1,73 @@
+<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+<style> 
+body {
+    background-color: black;
+}
+
+.box {
+    position: relative;
+}
+
+.input {
+    padding: 10px;
+    width: 64px;
+    height: 100%;
+    background: none;
+    border: none;
+    font-family: 'Proxima-Nova-regular' !important;
+    font-size: 18px !important;
+    color: rgba(255, 255, 255, 1) !important;
+    outline: none;
+    transition: .5s;
+}
+
+.box:hover input {
+    width: 163px;
+    border: none;
+    border-bottom: 2px solid white;
+    background: transparent;
+    border-radius: 0px;
+}
+
+/* Ensure the hover effect doesn't apply when the input is focused or when typing */
+.box:focus-within {
+    /* Optional: Add styles to keep the box focused while input is in use */
+    background: none; /* Adjust this to your preference */
+}
+
+.box .svg-search {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translate(-50%, -50%);
+    font-size: 26px;
+    color: white;
+    transition: .2s;
+}
+
+@media(max-width:990px) {
+    .box .svg-search {
+        position: absolute;
+        top: 50%;
+        left: 15px;
+        transform: translate(-50%, -50%);
+        font-size: 26px;
+        color: white;
+        transition: .2s;
+    }
+}
+
+.box:hover .svg-search,
+.box:focus .svg-search {
+    opacity: 0;
+    z-index: -1;
+}
+
+</style>
+
+<div class="box">
+    <form name="search" class="d-flex justify-content-lg-end">
+        <input type="text" class="input" name="txt" onmouseout="this.value = ''; this.blur();">
+    </form>
+    <img src="assets/svg/Vector.svg" class="svg-search" alt="" width="30px" height="30px">
+</div>

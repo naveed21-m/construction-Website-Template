@@ -34,7 +34,7 @@
                 <!-- Navbar content -->
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Center content -->
-                    <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                    <ul class="navbar-nav mb-lg-2 mb-4 m-auto mb-2 mb-lg-0">
                         <li class="nav-item">
                             <a class="nav-link " aria-current="page" href="index.html">Home</a>
                         </li>
@@ -58,13 +58,14 @@
 
                     </ul>
 
-                    <!-- Search bar -->
-                    <form class="d-flex">
-                        <a href='#search'>
-                            <img src="assets/svg/Vector.svg" alt="" width="30px" height="30px">
-
-                        </a>
-                    </form>
+                    <div class="box" onclick="ahmad()" >
+                        <form name="search" class="d-flex justify-content-lg-end">
+                            <input type="text" class="input" name="text"  id="index_box_input">
+                            <button class="btn" type="submit">   <img src="assets/svg/Vector.svg" id="index_box_svg"  class="svg-search" alt="" width="30px" height="30px"></button>
+                        </form>
+                        <img src="assets/svg/Vector.svg" id="index_box_svg2"  class="svg-search" alt="" width="30px" height="30px">
+                                               
+                    </div>
                 </div>
             </div>
         </nav>
