@@ -644,14 +644,19 @@ margin-right: 0px;
     color: rgba(255, 255, 255, 1) !important;
     outline: none;
     transition: .5s;
+    cursor: pointer;
+ opacity: 0;
 }
 
 .box input.active{
     width: 163px;
     border: none;
+    cursor: auto;
     border-bottom: 2px solid white;
     background: transparent;
     border-radius: 0px;
+  opacity: 1;
+    
 }
 
 .box .svg-search {
@@ -696,4 +701,16 @@ margin-right: 0px;
         transition: .2s;
     }
 
+}
+.navbar-sarch-cross{
+
+}
+.footer-logo{
+    width:169px; height:42px;
+}
+@media(max-width:420px){
+    .footer-logo {
+        width: 137px;
+        height: 42px;
+    }
 }
