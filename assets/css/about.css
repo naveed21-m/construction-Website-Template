@@ -527,13 +527,23 @@ html {
 
 .service-fourth-row-first-heading {
     font-family: 'WorkSans-bold';
-    font-size: 33px;
+    font-size: 23px;
     font-weight: 600;
     line-height: 38px;
     text-align: left;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
     text-transform:  capitalize;
+
+}
+@media(max-width:1100px) and (min-width:990px){
+    .service-fourth-row-first-heading {
+
+        font-size: 19px;
+     
+    
+    }
+
 
 }
 @media(max-width:420px){
