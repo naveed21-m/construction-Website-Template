@@ -714,3 +714,16 @@ margin-right: 0px;
         height: 42px;
     }
 }
+@media(min-width:1220px){
+
+    .latest-blog-all-col{
+        width: 560px;
+    }
+}
+@media(min-width:990px){
+
+    .service-fourth-row-colm {
+    padding: 0px 20px;
+    }
+
+}
