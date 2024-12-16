@@ -147,6 +147,10 @@ html {
     text-decoration-skip-ink: none;
     color: #201F1D;
 }
+.about-first-row-style{
+    position: relative;
+    top: 150px;
+}
 
 .about-second-row-heading {
     font-family: 'Yrsa-Regular';
@@ -159,8 +163,8 @@ html {
     color: #201F1D;
 }
 
-.about-second-row {
-    margin-top: 200px;
+.about-second-row-about {
+    margin-top: 230px;
     /* margin-bottom: 200px; */
 }
 
