@@ -382,7 +382,18 @@ html {
     text-decoration-skip-ink: none;
     color: #201F1D;
 }
-
+@media (max-width:500px) {
+    .service-first-heading {
+        font-family: 'WorkSans-Bold';
+        font-size: 39px;
+        font-weight: 700;
+        line-height: 62px;
+        text-align: center;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        color: #201F1D;
+    }
+}
 .service-first-para {
     font-family: 'WorkSans-regular';
     font-size: 20px;
