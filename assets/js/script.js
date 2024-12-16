@@ -12,8 +12,8 @@ document.addEventListener("DOMContentLoaded", () => {
     y: 150,
     duration: 1,
     scrollTrigger: {
-      trigger: ".about-second-row",
-      start: "top bottom",
+      trigger: ".about-second-row-col",
+      start: " bottom",
     },
   });
 
