@@ -1,5 +1,5 @@
 .body{
-    overflow: hidden;
+    overflow-x: hidden !important;
 }
                                                   /* navbar  */
 @font-face {
@@ -541,7 +541,7 @@ text-transform: capitalize;
     
         font-weight: 700;
         color: rgba(32, 31, 29, 1);
-        line-height: 47px;
+        line-height: 47px;  
     }
 }
 .footer-container{

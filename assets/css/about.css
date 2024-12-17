@@ -2,7 +2,7 @@ body,
 html {
     margin: 0;
     padding: 0;
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
     background-color: #F3F4F6;
 }
 
@@ -1082,32 +1082,27 @@ html {
     color: #4F4F4F;
 }
 .slider-container-second {
-    overflow: hidden; /* Hide overflowing content */
+    overflow: hidden;  /* Hide the overflowed content */
     position: relative;
     width: 100%;
 }
 
 .slider-second {
-    display: inline-flex;
-    animation: scroll 20s linear infinite; /* Smooth continuous scroll */
+    display: flex; /* Flexbox layout to keep cards in a row */
+    animation: scroll 20s linear infinite; /* Continuous scroll */
 }
-@media (max-width: 767px) {
-    .slider-second {
-        display: inline-flex;
-        animation: scroll 5s linear infinite; /* Smooth continuous scroll */
-    } 
-}
+
 .new-row-slider-card {
     flex: 0 0 auto; /* Prevent shrinking */
-    margin: 0 10px; /* Add spacing between cards */
-    width: 575px; /* Adjust card width */
+    margin: 0 10px; /* Space between cards */
+    width: 575px; /* Card width */
 }
 
 @keyframes scroll {
     0% {
-        transform: translateX(0);
+        transform: translateX(0); /* Start from the initial position */
     }
     100% {
-        transform: translateX(-100%);
+        transform: translateX(-100%); /* Move the entire row of cards left */
     }
-}   
+}
